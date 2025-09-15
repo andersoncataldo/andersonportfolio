@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfólio profissional – substitua pelos seus dados e projetos." />
+    <meta name="theme-color" content="#ffffff" id="meta-theme-color" />
+    <title>Anderson Cataldo – Portfólio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container nav" role="navigation" aria-label="Principal">
+        <a href="#inicio" class="brand" aria-label="Ir para o início">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Anderson Viana Cataldo</span>
+        </a>
+
+        <nav class="links" id="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="actions">
+          <button id="theme-toggle" class="btn" aria-pressed="false" aria-label="Alternar modo escuro">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            Tema
+          </button>
+          <button class="btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="18" x2="21" y2="18" /></svg>
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- ====== Hero ====== -->
+      <section class="section">
+        <div class="container hero">
+          <div>
+            <h1>Olá, eu sou <span style="color: var(--primary)">Anderson Cataldo</span>.</h1>
+            <p class="lead">Desenvolvedor(a) Front‑end focado(a) em interfaces rápidas, acessíveis e com código limpo. Aqui você encontra meus projetos, stack e contato.</p>
+            <div class="cta">
+              <a class="btn primary" href="#projetos">Ver Projetos</a>
+              <a class="btn" href="assets/curriculo.pdf" download>Baixar CV</a>
+            </div>
+            <div class="social" aria-label="Perfis sociais">
+              <a href="https://github.com/andersoncataldo" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58 0-.28-.01-1.02-.02-2-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0C16.78 4.9 17.78 5.2 17.78 5.2c.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/andersonnviana" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.82v2.05h.05c.53-1 1.83-2.05 3.76-2.05C19.4 8 21 10.02 21 13.44V23h-4v-8.3c0-1.98-.04-4.52-2.76-4.52-2.76 0-3.18 2.16-3.18 4.38V23h-4V8z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+            <div class="avatar">
+                <img src="assets/avatar.jpeg" alt="Foto de Seu Nome" loading="lazy" decoding="async">
+            </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <div class="container">
+          <h2>Sobre</h2>
+          <p class="lead">Desenvolvedor Full-Stack em formação (UNIFOR), com vivência como Aprendiz em Sistemas (Grupo 3Corações) organizando dados, relatórios e documentação. Busco estágio/júnior para evoluir em automações (scripts e integrações), desenvolvimento web e testes (unitários/funcionais)</p>
+          <div class="spacer"></div>
+          <p>Interesses: design systems, testes automatizados, UX/UI e boas práticas (Clean Code, SOLID).</p>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section">
+        <div class="container">
+          <h2>Habilidades</h2>
+          <p class="lead">Stack principal e proficiências. Ajuste os níveis conforme sua autoavaliação.</p>
+          <div class="skills">
+            <div class="card skill"><h3>HTML5</h3><div class="bar" style="--value: 80%"><span></span></div></div>
+            <div class="card skill"><h3>CSS3 / Tailwind</h3><div class="bar" style="--value: 75%"><span></span></div></div>
+            <div class="card skill"><h3>JavaScript</h3><div class="bar" style="--value: 85%"><span></span></div></div>
+            <div class="card skill"><h3>Python</h3><div class="bar" style="--value: 90%"><span></span></div></div>
+            <div class="card skill"><h3>Java</h3><div class="bar" style="--value: 65%"><span></span></div></div>
+            <div class="card skill"><h3>MySQL</h3><div class="bar" style="--value: 40%"><span></span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="section">
+        <div class="container">
+          <h2>Projetos</h2>
+          <p class="lead">Alguns trabalhos recentes. Substitua os links pelos seus repositórios e demos.</p>
+
+          <div class="grid">
+            <article class="card project">
+              <div class="thumb"> Site de Casamento</div>
+              <div class="content">
+                <h3>Página web</h3>
+                <p class="muted">site com páginas e botões dinâmicos.</p>
+                <div class="tags"><span class="tag">CSS3</span><span class="tag">HTML5</span><span class="tag">Google Forms</span></div>
+                <div class="links">
+                  <a class="btn" href="https://github.com/andersoncataldo/siteoficialAnderson_E_Carol2025" target="_blank" rel="noopener">Código</a>
+                  <a class="btn primary" href="https://andersoncataldo.github.io/siteoficialAnderson_E_Carol2025/" target="_blank" rel="noopener">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb">Índice Remissivo</div>
+              <div class="content">
+                <h3>Manipulação e leitura de arquivos .txt</h3>
+                <p class="muted">leitura de .txt e organização e contagem de palavras-chaves.</p>
+                <div class="tags"><span class="tag">Java</span></div>
+                <div class="links">
+                  <a class="btn" href="https://github.com/SEUUSUARIO/projeto-b" target="_blank" rel="noopener">Código</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb">App Crisma</div>
+              <div class="content">
+                <h3>Front + Back</h3>
+                <p class="muted">App para controle interno para coordenação, catequistas e crismandos (ainda em desenvolvimento).</p>
+                <div class="tags"><span class="tag">React Native (Expo)</span><span class="tag">Java (Spring Boot)</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section">
+        <div class="container">
+          <h2>Experiência</h2>
+          <p class="lead">Linha do tempo de posições e conquistas.</p>
+          <div class="timeline">
+            <div class="card item">
+              <h3>Aprendiz – Assistente Administrativo | Sistemas e Projetos • Grupo 3corações</h3>
+              <div class="meta">Jan/2025 – Presente • Presencial</div>
+              <p>Atuo no suporte às rotinas da equipe fiscal, auxiliando na organização de documentos, lançamento de notas fiscais e conferência de dados. Participo da elaboração de relatórios e planilhas de apoio, contribuindo para a eficiência e conformidade dos processos fiscais. Além disso, desenvolvo soluções de automação para tarefas recorrentes da equipe, otimizando o tempo e reduzindo erros operacionais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container">
+          <h2>Contato</h2>
+          <p class="lead">Fale comigo. Sem backend: o envio abre seu e-mail com os dados preenchidos.</p>
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/andersonvcataldo@gmail.com"
+            method="POST"
+            data-mode="formsubmit"
+            novalidate
+            >
+            <div class="form-row">
+                <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="name" type="text" placeholder="Seu nome" required />
+                </div>
+                <div class="field">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" placeholder="voce@email.com" required />
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="subject" type="text" placeholder="Sobre o que você quer falar?" required />
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="message" placeholder="Conte-me mais..." required></textarea>
+            </div>
+
+            <!-- Configurações do FormSubmit -->
+            <input type="hidden" name="_subject" value="Novo contato pelo Portfólio" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- honeypot anti-spam (campo invisível para humanos) -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <!-- Para redirecionar após o envio (ajuste a URL para produção) -->
+            <input type="hidden" name="_next" value="https://seu-dominio.com/obrigado.html" />
+
+            <!-- Opcional: resposta automática para quem preencheu -->
+            <input type="hidden" name="_autoresponse" value="Olá! Recebi sua mensagem e responderei em breve. — Seu Nome" />
+
+            <button class="btn primary" type="submit">Enviar</button>
+            <p class="note" id="form-note" role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+        <span>© <span id="year"></span> Anderson Cataldo. Todos os direitos reservados.</span>
+        <a class="btn" href="#inicio" aria-label="Voltar ao topo">Topo ↑</a>
+      </div>
+    </footer>
+
+    <button class="btn top" title="Voltar ao topo" aria-label="Voltar ao topo" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑</button>
+  </body>
+</html>
