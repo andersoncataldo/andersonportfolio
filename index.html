@@ -182,18 +182,13 @@
                 <textarea id="mensagem" name="message" placeholder="Conte-me mais..." required></textarea>
             </div>
 
-            <!-- Configurações do FormSubmit -->
             <input type="hidden" name="_subject" value="Novo contato pelo Portfólio" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
-            <!-- honeypot anti-spam (campo invisível para humanos) -->
+
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
-            <!-- Para redirecionar após o envio (ajuste a URL para produção) -->
-            <input type="hidden" name="_next" href="obrigado/obrigado.html" />
-
-            <!-- Opcional: resposta automática para quem preencheu -->
-            <input type="hidden" name="_autoresponse" value="Olá! Recebi sua mensagem e responderei em breve. — Seu Nome" />
+            <input type="hidden" name="_autoresponse" value="Olá! Recebi sua mensagem e responderei em breve. — Anderson Viana" />
 
             <button class="btn primary" type="submit">Enviar</button>
             <p class="note" id="form-note" role="status" aria-live="polite"></p>

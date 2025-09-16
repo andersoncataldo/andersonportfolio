@@ -53,8 +53,6 @@ const io = new IntersectionObserver((entries) => {
 }, { rootMargin: `-40% 0px -55% 0px`, threshold: [0, 1] });
 sections.forEach(s => io.observe(s));
 
-// Formulário sem backend -> mailto
   note.style.color = 'inherit';
 
-// Ano dinâmico
 $('#year').textContent = new Date().getFullYear();
