@@ -122,3 +122,38 @@ footer { border-top: 1px solid var(--border); padding: 28px 0; color: var(--mute
 /* ====== Utilities ====== */
 .muted { color: var(--muted); }
 .spacer { height: 1px; background: var(--border); margin: 12px 0; }
+
+.certificado .thumb {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.certificado .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.certificado .thumb img:hover {
+  transform: scale(1.05);
+}
+.certificado .content {
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+.certificado .links {
+  display: flex;
+  gap: 8px;
+}
+.certificado .tag {
+  padding: 4px 8px;
+  font-size: .8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface);
+}

@@ -1,3 +1,5 @@
+// /script.js
+// Por que: respeitar preferência do usuário e persistir o tema
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
@@ -38,8 +40,10 @@ toggleBtn.addEventListener('click', () => {
 });
 $$('#nav-links a').forEach((a) => a.addEventListener('click', () => links.classList.remove('open')));
 
+// Scroll behavior & scroll-spy
+// Por que: rolagem suave e destaque de seção ativa
 try { document.documentElement.style.scrollBehavior = 'smooth'; } catch {}
-const sections = ['inicio','sobre','habilidades','projetos','experiencia','contato'].map(id => document.getElementById(id));
+const sections = ['inicio','sobre','habilidades','projetos','experiencia','certificados','contato'].map(id => document.getElementById(id));
 const navAnchors = new Map($$('#nav-links a').map(a => [a.getAttribute('href').slice(1), a]));
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -51,8 +55,7 @@ const io = new IntersectionObserver((entries) => {
     }
   });
 }, { rootMargin: `-40% 0px -55% 0px`, threshold: [0, 1] });
-sections.forEach(s => io.observe(s));
+sections.forEach(s => s && io.observe(s));
 
-  note.style.color = 'inherit';
-
+// Ano dinâmico
 $('#year').textContent = new Date().getFullYear();
