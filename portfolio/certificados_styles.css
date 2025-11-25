@@ -77,6 +77,13 @@
   background: color-mix(in oklab, var(--bg) 95%, transparent);
   backdrop-filter: saturate(180%) blur(12px);
   z-index: 40;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.filters-section.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .filters {

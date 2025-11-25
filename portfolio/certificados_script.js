@@ -4,6 +4,37 @@
 // Ano dinâmico no footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ====== Hide Filters on Scroll ======
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+const filtersSection = document.querySelector('.filters-section');
+
+function updateFiltersVisibility() {
+  const currentScrollY = window.scrollY;
+  
+  // Se estiver no topo da página (primeiros 50px), sempre mostrar
+  if (currentScrollY <= 50) {
+    filtersSection.classList.remove('hidden');
+  } 
+  // Se passou de 50px, esconder
+  else {
+    filtersSection.classList.add('hidden');
+  }
+  
+  lastScrollY = currentScrollY;
+  ticking = false;
+}
+
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      updateFiltersVisibility();
+    });
+    ticking = true;
+  }
+});
+
 // ====== Sistema de Filtros ======
 const filterButtons = document.querySelectorAll('.filter-btn');
 const certificateCards = document.querySelectorAll('.certificate-card');
@@ -77,12 +108,13 @@ const modalImage = document.getElementById('modal-image');
 
 // Mapeamento de certificados para suas imagens
 const certificateImages = {
-  cert1: 'assets/certificados/Certificado_-_Conhecimentos_Gerais_page-0001.png',
+  cert1: 'assets/certificados/Certificado__White_Belt_page-0001.png',
   cert2: 'assets/certificados/Certificado__Yellow_Belt_page-0001.png',
-  cert3: 'assets/certificados/Certificado__White_Belt_page-0001.png',
-  cert4: 'assets/certificados/python-automation.jpg',
-  cert5: 'assets/certificados/ux-ui-design.jpg',
-  cert6: 'assets/certificados/java-spring.jpg'
+  cert3: 'assets/certificados/Certificado_-_Conhecimentos_Gerais_page-0001.png',
+  cert4: 'assets/certificados/Certificado_-_Trilha_Google_Documentos_page-0001.png',
+  cert5: 'assets/certificados/Certificado_-_Trilha_Google_Formulrios_page-0001.png',
+  cert6: 'assets/certificados/Certificado_-_Trilha_Google_Gmail_page-0001.png',
+  cert7: 'assets/certificados/Certificado_-_Trilha_Planilhas_Básico_page-0001.png'
 };
 
 // Função para abrir modal
